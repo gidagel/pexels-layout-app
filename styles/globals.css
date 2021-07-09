@@ -1,0 +1,36 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;  
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.8em;
+  line-height: 1em;
+  margin: 0.5em 0;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-style: italic;
+  color: #626262;
+  margin: 0;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1em;
+  font-style: italic;
+  margin-top: 0.2em;
+}
