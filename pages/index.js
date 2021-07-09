@@ -4,7 +4,6 @@ import Thumbnail from "../components/Thumbnail";
 import MainImage from "../components/MainImage";
 
 const Home = ({ data }) => {
-  const [theme, setTheme] = useState('nature')
   const [currentImg, setCurrentImg] = useState(data[0]?.src.original)
   const [currentPhotographer, setCurrentPhotographer] = useState(data[0]?.photographer)
   const [currentUrl, setCurrentUrl] = useState(data[0].url)
@@ -62,7 +61,7 @@ const Home = ({ data }) => {
   );
 };
 
-async function getPhotos(theme) {
+async function getPhotos() {
   try{
     let theme = 'nature'
     let res = await fetch(
