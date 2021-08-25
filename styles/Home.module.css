@@ -12,20 +12,6 @@
   width: 100%;
 }
 
-.menu {
-  width: 15vw;
-}
-
-.menuLinks {
-  display: flex;
-  flex-direction: column;
-  padding: 2em;
-}
-
-.menuLinks > * {
-  margin: 1em 0;
-}
-
 .image {
   position: relative;
   width: 10em;
@@ -65,20 +51,6 @@
   .main {
     flex-direction: column;
     padding: 1em;
-  }
-
-  .menu {
-    width: 100%;
-  }
-
-  .menuLinks {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1em 0;
-  }
-
-  .menuLinks > * {
-    margin: 0;
   }
 
   .mainImage {
