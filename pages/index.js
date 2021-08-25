@@ -12,35 +12,10 @@ const Home = ({ data }) => {
     setCurrentImg(data.src.original)
     setCurrentPhotographer(data.photographer)
     setCurrentUrl(data.url)
-  }    
-  const setButtonImage = (index) => {
-    setCurrentImg(data[index].src.original)
-    setCurrentPhotographer(data[index].photographer)
-    setCurrentUrl(data[index].url)
-  }      
-  console.log(data)
+  }
   
   return (
     <main className={styles.main}>
-      <div className={styles.menu}>
-        <div className={styles.menuLinks}>
-          <button onClick={(index) => setButtonImage(index = 0)}>
-            Button 1
-          </button>
-          <button onClick={(index) => setButtonImage(index = 1)}>
-            Button 2
-          </button>
-          <button onClick={(index) => setButtonImage(index = 2)}>
-            Button 3
-          </button>
-          <button onClick={(index) => setButtonImage(index = 3)}>
-            Button 4
-          </button>
-          <button onClick={(index) => setButtonImage(index = 4)}>
-            Button 5
-          </button>
-        </div>
-      </div>
       <div className={styles.gallery}>
         <h1>Pexels Gallery</h1>
         <MainImage src={currentImg} title={currentPhotographer} description={currentUrl} />
