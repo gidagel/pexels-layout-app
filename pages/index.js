@@ -43,7 +43,7 @@ async function getPhotos() {
       `https://api.pexels.com/v1/search?query=${theme}&per_page=5`,
       {
         headers: {
-          Authorization: '563492ad6f917000010000017f488949f5c24f7cb9fc4ad4069c1050',
+          Authorization: AUTH_CODE,
         },
       }
     );
